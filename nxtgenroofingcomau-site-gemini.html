@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nxtgen Roofing Perth - Specialists in roof restorations, repairs, re-roofing, and plumbing. 20+ years experience. Interest-free finance available.">
+    
+    <!-- CONFIGURATION -->
+    <script>
+        window.CHAT_WIDGET_CONFIG = {
+            widgetId: "691a8c5133e9929ee9b58542"
+        };
+    </script>
+
+    <title>Nxtgen Roofing | Perth's One Stop Roofing Specialists</title>
+
+    <!-- FLUID TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CHAT WIDGET LOADER -->
+    <script 
+        src="https://beta.leadconnectorhq.com/loader.js"  
+        data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" 
+        data-widget-id="691a8c5133e9929ee9b58542"
+    ></script>
+
+    <style>
+        /* 
+        ----------------------------------------
+        ROOT VARIABLES & RESET
+        ----------------------------------------
+        */
+        :root {
+            /* Colors */
+            --primary: #0f2b46;  /* Deep Navy Blue - Trust/Corporate */
+            --primary-dark: #081a2d;
+            --primary-light: #1e4870;
+            --accent: #ff6b00;   /* Safety/Construction Orange - High Visibility */
+            --accent-hover: #e65100;
+            
+            --text-primary: #1a1a1a;
+            --text-secondary: #4b5563;
+            --text-light: #ffffff;
+            
+            --bg-light: #ffffff;
+            --bg-alt: #f3f4f6;
+            --bg-dark: #111827;
+            
+            --success: #10b981;
+            --error: #ef4444;
+            
+            /* Spacing */
+            --container-width: 1200px;
+            --section-padding: 80px;
+            
+            /* Fonts */
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+            
+            /* Shadows & Radius */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 
+        ----------------------------------------
+        TYPOGRAPHY
+        ----------------------------------------
+        */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--text-light); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--primary); }
+        h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        
+        p { margin-bottom: 1.5rem; color: var(--text-secondary); }
+        
+        .text-center { text-align: center; }
+        .text-accent { color: var(--accent); }
+        .text-white { color: var(--text-light); }
+        
+        /* 
+        ----------------------------------------
+        COMPONENTS (Buttons, Icons, etc.)
+        ----------------------------------------
+        */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 32px;
+            border-radius: 4px; /* Squared for construction feel */
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--text-light);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--text-light);
+            color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--text-light);
+            color: var(--primary);
+        }
+
+        /* SVG Icons */
+        svg {
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+        
+        .icon-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background: rgba(15, 43, 70, 0.1);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .icon-container {
+            background: var(--accent);
+            color: var(--text-light);
+        }
+
+        /* 
+        ----------------------------------------
+        LAYOUT SECTIONS
+        ----------------------------------------
+        */
+        
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            padding: 10px 0;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .top-bar strong { color: var(--accent); }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        .header-cta { display: flex; gap: 15px; align-items: center; }
+        
+        .phone-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            min-height: 600px;
+            background-image: linear-gradient(rgba(15, 43, 70, 0.75), rgba(15, 43, 70, 0.6)), url('https://pixabay.com/get/g0e6fe34a88435a02513aa31c173a340bc88c41cec6a7057fe167a9c8379e5b301da808854f746ab03b95c2cb0313b201bb8489557b75d997b5ede8d2723ccd86_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: var(--text-light);
+            margin-top: 0;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--accent);
+            color: var(--text-light);
+            padding: 30px 0;
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: var(--font-heading);
+        }
+        .trust-item svg { width: 24px; height: 24px; }
+
+        /* About Section */
+        .about { padding: var(--section-padding) 0; background: var(--bg-light); }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            height: 500px;
+            object-fit: cover;
+        }
+        .check-list { list-style: none; margin-top: 20px; }
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        .check-list svg { color: var(--accent); margin-top: 4px; }
+
+        /* Services Section */
+        .services { padding: var(--section-padding) 0; background: var(--bg-alt); }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .card {
+            background: var(--bg-light);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: -40px -30px 30px -30px;
+            width: calc(100% + 60px);
+            display: block;
+        }
+        
+        /* Features / Audience */
+        .audience { padding: var(--section-padding) 0; background: var(--primary); color: var(--text-light); }
+        .audience h2 { color: var(--text-light); }
+        .audience p { color: rgba(255,255,255,0.8); }
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .audience-item {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Gallery/Portfolio */
+        .gallery { padding: var(--section-padding) 0; }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item { height: 300px; overflow: hidden; border-radius: var(--radius); position: relative; }
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.1); }
+
+        /* Testimonials */
+        .testimonials { padding: var(--section-padding) 0; background: var(--bg-alt); }
+        .review-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
+        .stars { color: #fbbf24; margin-bottom: 15px; }
+
+        /* FAQ */
+        .faq { padding: var(--section-padding) 0; max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 10px;
+        }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 20px 0;
+            background: none;
+            border: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: var(--text-secondary);
+        }
+        .faq-item.active .faq-answer { max-height: 200px; padding-bottom: 20px; }
+        .faq-icon { transition: transform 0.3s; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
+
+        /* Contact & Footer */
+        .contact-section {
+            background: var(--primary-dark);
+            color: var(--text-light);
+            padding: 80px 0;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 { color: var(--text-light); margin-top: 20px; }
+        .contact-links a {
+            display: block;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .contact-links a:hover { color: var(--accent); }
+
+        .contact-form {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--radius);
+            color: var(--text-primary);
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2);
+        }
+
+        footer {
+            background: #081a2d;
+            color: rgba(255,255,255,0.6);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100vh;
+            background: var(--bg-light);
+            z-index: 1001;
+            padding: 80px 30px;
+            transition: right 0.3s ease;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        }
+        .mobile-menu.active { right: 0; }
+        .mobile-menu a {
+            display: block;
+            padding: 15px 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+        }
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none;
+        }
+        .mobile-overlay.active { display: block; }
+        
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* 
+        ----------------------------------------
+        RESPONSIVE
+        ----------------------------------------
+        */
+        @media (max-width: 992px) {
+            .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
+            .hero { text-align: center; justify-content: center; }
+            .hero-content { margin: 0 auto; }
+            .hero-badges { justify-content: center; }
+            .nav-links, .header-cta .btn { display: none; }
+            .hamburger { display: block; }
+            .phone-link { margin-left: auto; margin-right: 20px; }
+            
+            .about-img img { height: 300px; margin-bottom: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 50px 0; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="icon-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </span>
+            <strong>INTEREST FREE FINANCE AVAILABLE</strong> | PARTNERED WITH BRIGHTE
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                NXTGEN<span>ROOFING</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Projects</a>
+                <a href="#reviews">Reviews</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="tel:0456180019" class="phone-link">
+                    <div class="icon-container" style="width: 36px; height: 36px; margin: 0; background: var(--primary); color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    0456 180 019
+                </a>
+                <a href="#contact" class="btn btn-primary">Free Quote</a>
+            </div>
+
+            <div class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay"></div>
+    <div class="mobile-menu">
+        <button class="close-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Our Work</a>
+        <a href="#reviews">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+        <a href="tel:0456180019" class="btn btn-primary" style="margin-top: 20px; text-align: center; display: flex; width: 100%;">Call Now</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center hero-content scroll-reveal">
+            <div class="hero-badges" style="justify-content: center;">
+                <div class="badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    Licensed & Insured
+                </div>
+                <div class="badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    20+ Years Experience
+                </div>
+            </div>
+            <h1>Premium Roof Restorations & Replacements</h1>
+            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9);">Perth's One Stop Roofing Solution. Protecting your home with quality workmanship and industry-leading warranties.</p>
+            <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#contact" class="btn btn-primary">Get A Free Quote</a>
+                <a href="#services" class="btn btn-secondary" style="border-color: white; background: rgba(255,255,255,0.1);">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                10 Year Warranty
+            </div>
+            <div class="trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                Interest Free Finance
+            </div>
+            <div class="trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                5-Star Rated
+            </div>
+            <div class="trust-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M8 21V12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9"></path></svg>
+                Local WA Business
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-img scroll-reveal">
+                <!-- Red Tile Texture Image -->
+                <img src="https://pixabay.com/get/g2d77835a033b15418a056a4ec811c89687ecc8ba3a22f2ae92356c05681efc71851348908bf72e7b5320d6d37dd70b20188f26ac52343e44fd01d51402b84032_1280.jpg" alt="Detailed roof tile texture showing quality" loading="lazy">
+            </div>
+            <div class="about-content scroll-reveal">
+                <span class="text-accent" style="font-weight: 700; text-transform: uppercase;">Who We Are</span>
+                <h2>Perth's One Stop Roofing Specialists</h2>
+                <p>We’re Nxtgen Roofing, your one stop roofing solution. For almost 20 years, we’ve been delivering the highest quality roofs throughout Perth, both residential and commercial.</p>
+                <p>Our highly skilled trades team can efficiently identify and resolve any roofing problem. With Nxtgen Roofing, you won’t find yourself dealing with multiple companies or contractors – we’ve got them right here, all in one place.</p>
+                
+                <ul class="check-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Highly skilled & experienced tradesmen on every job
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        We do both tile and metal roof restorations
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Flexible, interest-free finance options with Brighte
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        Thorough inspections & obligation-free quotes
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="margin-top: 20px;">Meet The Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="text-center scroll-reveal">
+                <span class="text-accent" style="font-weight: 700; text-transform: uppercase;">What We Do</span>
+                <h2>Our Comprehensive Services</h2>
+                <p style="max-width: 600px; margin: 0 auto;">From small repairs to full restorations, we cover all aspects of residential and commercial roofing in Perth.</p>
+            </div>
+
+            <div class="service-grid">
+                <!-- Service 1: Restoration -->
+                <div class="card scroll-reveal">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M8 21V12a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v9"></path></svg>
+                    </div>
+                    <h3>Roof Restorations</h3>
+                    <p>Using highest quality materials to improved the look and safety of your home. Includes leak checking, cleaning, sealing and coating.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+
+                <!-- Service 2: Repairs (Image based) -->
+                <div class="card scroll-reveal">
+                    <img src="https://pixabay.com/get/g09e10156782fd56916c0e9ce487dee3a754f5f15d832c38feeece7a760eb8558d083c1f2bcb8d083626c5e6bdb5aac796a0fd84b04cfe760943c7f969e9a0ba9_1280.jpg" alt="Roof Repairs" class="card-img-top">
+                    <h3>Roof Repairs</h3>
+                    <p>Storm damage, leaks, or general wear. We repair it all to extend the life of your roof and prevent costly future damage.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+
+                <!-- Service 3: Plumbing/Gutters -->
+                <div class="card scroll-reveal">
+                    <img src="https://pixabay.com/get/g83bf43ef91118852f48ce781ad3c3fabc88fcefcf931f85e92b2b2d5e690f7c8aa82b712fc0b919d9e64db86e2a675d14c55e752bf29cebd84f712db3cc5bef9_1280.jpg" alt="Roof Plumbing" class="card-img-top">
+                    <h3>Roof Plumbing</h3>
+                    <p>Downpipes, gutters and flashing replacement. We ensure water drains efficiently to protect your home from interior damage.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+
+                <!-- Service 4: Re-Roofing -->
+                <div class="card scroll-reveal">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"></path><path d="M5 20V8h14v12"></path><path d="m12 2 10 6H2l10-6Z"></path></svg>
+                    </div>
+                    <h3>Re-Roofing</h3>
+                    <p>Complete replacement of old roofs with new ones. Crucial for older homes facing structural issues or severe tile degradation.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+
+                 <!-- Service 5: Tiling -->
+                 <div class="card scroll-reveal">
+                    <img src="https://pixabay.com/get/gb5ec09425c00bc03fbba76b61814614f94e22fbdfa4439eb68706f0696ccdfbaf0ae88b104cca4915273d0f47d1e304bc9dd56345c93c271da0aba91809f7b40_1280.jpg" alt="Roof Tiling" class="card-img-top">
+                    <h3>Roof Tiling</h3>
+                    <p>From single tile replacement to complete tiling projects. We use extensive ranges of high-quality tiles.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+
+                <!-- Service 6: Cleaning -->
+                <div class="card scroll-reveal">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <h3>High Pressure Cleaning</h3>
+                    <p>Professional cleaning to maintain quality and efficiency. Removes buildup, moss, and grime to add value to your property.</p>
+                    <a href="#contact" style="color: var(--accent); text-decoration: none; font-weight: 700;">Get Quote &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help (Dark Section) -->
+    <section class="audience">
+        <div class="container text-center">
+            <h2>Who Do We Help?</h2>
+            <p>Trusted by locals across WA</p>
+            
+            <div class="audience-grid scroll-reveal">
+                <div class="audience-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:15px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <h3>Homeowners</h3>
+                    <p>Protect your sanctuary. We ensure your home is safely covered, leaving no tile unturned.</p>
+                </div>
+                <div class="audience-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:15px;"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    <h3>Prop. Investors</h3>
+                    <p>Keep your investment maintained with one reliable company for all roofing needs.</p>
+                </div>
+                <div class="audience-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:15px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <h3>Real Estates</h3>
+                    <p>We save Property Managers time. Reliable, on-time, and reputable service on every job.</p>
+                </div>
+                <div class="audience-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:15px;"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    <h3>Builders</h3>
+                    <p>We proudly partner with reputable builders. If it's on the roof, we've got it covered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="text-accent" style="font-weight: 700; text-transform: uppercase;">Our Work</span>
+                <h2>See The Difference</h2>
+            </div>
+            <div class="gallery-grid scroll-reveal">
+                <div class="gallery-item">
+                    <img src="https://pixabay.com/get/g09e10156782fd56916c0e9ce487dee3a754f5f15d832c38feeece7a760eb8558d083c1f2bcb8d083626c5e6bdb5aac796a0fd84b04cfe760943c7f969e9a0ba9_1280.jpg" alt="Roofing Restoration in Perth" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://pixabay.com/get/g64bb923f579dcc320e5b9033482f9382f28a33813e4ad24c4a61562c4640c5e5958bb239a0ad2a164bf004a9494dc3e505ef390e6a36553d5ec8a109264b2a3b_1280.jpg" alt="Guttering and Downpipes" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://pixabay.com/get/gb5ec09425c00bc03fbba76b61814614f94e22fbdfa4439eb68706f0696ccdfbaf0ae88b104cca4915273d0f47d1e304bc9dd56345c93c271da0aba91809f7b40_1280.jpg" alt="Tile Replacement" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="testimonials">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2>Our 5 Star Reviews</h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="service-grid scroll-reveal">
+                <div class="review-card">
+                    <div class="stars">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="italic">"Great work Brayden and lads. Very happy with the end result. Reliable friendly service. Great communication. Would recommend these guys again and again."</p>
+                    <strong>- Kristi Bailey</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="italic">"Could not be happier! Brayden went above and beyond. Excellent communications, high standard work & reasonable price. Highly recommend."</p>
+                    <strong>- Binh Pham</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="italic">"Brayden answered all my questions and expedited my roof repair as the damage was far worse than I first anticipated. This is the best place to go for all your WA roofing needs."</p>
+                    <strong>- Trev Wales</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="text-center">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list" style="margin-top: 30px;">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        Do you offer free quotes?
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we conduct widely thorough roof inspections and provide clear, obligation-free quotes so you know exactly what is needed.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a warranty on your work?
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely. As an industry leader, all Nxtgen Roofing restorations come with a comprehensive 10-year warranty for your peace of mind.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer finance options?
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we have partnered with Brighte Finance to offer flexible, interest-free financing options for your roof restoration.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you work around solar panels or A/C units?
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, our team can work with anything on your roof including solar panels, A/C systems, or antennas. We ensure everything is perfectly re-installed.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <span class="text-accent" style="font-weight: 700;">DON'T WAIT</span>
+                <h2 style="color: white;">Get Your Free Quote Today</h2>
+                <p style="color: rgba(255,255,255,0.8);">Premium Roof Restorations and Replacements by WA's Most Experienced Team.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info scroll-reveal">
+                    <h3>Contact Us</h3>
+                    <div class="contact-links">
+                        <a href="tel:0456180019">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </span>
+                            0456 180 019
+                        </a>
+                        <a href="mailto:nxtgenroofing@yahoo.com">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
+                            nxtgenroofing@yahoo.com
+                        </a>
+                        <div>
+                             <span class="contact-icon" style="color: rgba(255,255,255,0.8); display:inline-block;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </span>
+                            <span style="color: rgba(255,255,255,0.8);">Unit 5/31 Haydock St, Forrestdale WA</span>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 40px;">Service Areas</h3>
+                    <p style="color: rgba(255,255,255,0.7); max-width: 400px;">Proudly serving Forrestdale, Byford, Perth Metro, and surrounding Western Australia areas.</p>
+                    
+                    <!-- Map -->
+                    <div style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378.533540935137!2d115.9527!3d-32.1372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a3297c5c6b5b5b5%3A0x504f0b535df5e0!2s5%2F31%20Haydock%20St%2C%20Forrestdale%20WA%206112%2C%20Australia!5e0!3m2!1sen!2sau!4v1620000000000!5m2!1sen!2sau" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form scroll-reveal">
+                    <h3 style="color: var(--primary); margin-top: 0; margin-bottom: 20px;">Request A Callback</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Name (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Phone (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="suburb" class="form-control" placeholder="Suburb (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="#" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: white; text-decoration: none; display: inline-block; margin-bottom: 20px;">
+                NXTGEN<span class="text-accent">ROOFING</span>
+            </a>
+            <p>&copy; <span class="current-year">2023</span> Nxtgen Roofing. All Rights Reserved.</p>
+            <div style="margin-top: 20px; opacity: 0.6;">
+                <a href="#" style="color: white; margin: 0 10px;">Privacy Policy</a> | 
+                <a href="#" style="color: white; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // 1. Current Year
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+
+        // 2. Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        const closeMenu = document.querySelector('.close-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        closeMenu.addEventListener('click', toggleMenu);
+        mobileOverlay.addEventListener('click', toggleMenu);
+        
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // 3. Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        // 4. FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const wasActive = faqItem.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!wasActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // 5. Form Validation
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+
+            // Simple validation
+            if(data.phone.length < 8) {
+                alert('Please enter a valid phone number.');
+                return;
+            }
+
+            // Simulate submission
+            const btn = form.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert('Thank you! Your request has been sent. We will contact you shortly.');
+                form.reset();
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }, 1500);
+        });
+
+        // 6. Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
